@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    width: 100%;
+}
+body {
+    height: 2080px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*------- start header-----------------*/
+header .content-header {
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+header .content-header ul li {
+    display: inline-block;
+}
+header .content-header nav {
+    text-align: center;
+}
+header .content-header .drop li,a  {
+    text-decoration: none;
+    color: #7b5244;
+    padding: 10px 19px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+header .content-header .drop {
+    position: relative;
+}
+header .content-header .drop-menu {
+    position: absolute;
+    visibility: hidden;
+}
+section .text-hed,.hed {
+    padding-top: 20px;
+    text-align: center;
+}
+section .text-hed span {
+    display: block;
+    width: 100px;
+    height: 2.5px;
+    background-color: #7b5244;
+    margin: 7px auto;
+    transition: .7s;
+}
+section .text-hed:hover span {
+    width: 150px;
+}
+section .Modern-Chair {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+}
+section .Modern-Chair .chair {
+    position: relative;
+}
+section .Modern-Chair .p-modern,.h2-modern {
+    text-align: left;
+}
+section .Modern-Chair .p-modern {
+    opacity: .6;
+    margin-top: 20px;
+}
+section .Modern-Chair .h2-modern {
+    font-size: 19px;
+}
+section .Modern-Chair .chair .fa-2a {
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+section .Modern-Chair div:hover .fa-2a {
+    visibility: visible;
+    opacity: 1;
+}
+/*--------/section----------------------------------------------------------------*/
+section .Penelope-Astrid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 18px;
+    grid-template-rows: minmax(300px, auto);
+}
+section .astrid {
+    background-color: #f7f3ef;
+    padding: 20px;
+    position: relative;
+}
+section .astrid h4 {
+    margin-left: 50px;
+    opacity: .8;
+}
+section .astrid .fa-la {
+    font-size: 45px;
+    color: #7b5244;
+}
+section .astrid .showing {
+    padding-top: 20px;
+    line-height: 1.7;
+}
+section .astrid .span-astrid {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+section .astrid .sp-astr {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #7b5244;
+    margin-left: 10px;
+}
+section .astrid .fa-la,.h2-astrid{
+    display: inline-block;
+}
+section .Penelope-Astrid .Designing-Interior p {
+    color: #7b5244;
+    font-size: 20px;
+}
+section .Penelope-Astrid .Designing-Interior {
+    padding: 20px;
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    transition: .6s;
+}
+section .Penelope-Astrid .two {
+    background-image: url(../images/cms-banner-2.jpg);
+}
+section .Penelope-Astrid .Interior-two:hover .two {
+    transform: scale(1.1);
+}
+section .Penelope-Astrid .Interior:hover .Designing-Interior {
+    transform: scale(1.1);
+}
+/*------------------/section------------------------------------*/
+section .item-info {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 40px 0;
+    text-align: center;
+}
+section .item:last-child {
+    border: 0;
+}
+section .item {
+    border-right: 1px solid #7b5244;
+}
+section .item .sp-item {
+    opacity: .6;
+}
+section .item .img-item {
+    background-position: center 5px;
+    transition: .7s;
+    background-image: url(../images/service-icon.png);
+    height: 55px;
+    background-repeat: no-repeat;
+}
+section .item:hover .img1 {
+    background-position: center -85px;
+}
+section .item .img2 {
+    background-position: center -180px; 
+}
+section .item:hover .img2 {
+    background-position: center -272px; 
+}
+section .item .img3 {
+    background-position: center -365px; 
+}
+section .item:hover .img3 {
+    background-position: center -456px; 
+}
+section .item .img4 {
+    background-position: center -547px; 
+}
+section .item:hover .img4 {
+    background-position: center -639px; 
+}
+section .item .img5 {
+    background-position: center -732px; 
+}
+section .item:hover .img5 {
+    background-position: center -822px; 
+}
+/*-----------------/section--------------------------------*/
+section .Product-Item {
+    margin-top: 50px;
+    text-align: center;
+}
+section .Product-Item .pro {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+section .Product-Item .pro-sp {
+    display: block;
+    background-color: #7b5244;
+    width: 100px;
+    height: 2.4px;
+    margin: auto;
+    transition: .8s;
+}
+section .hed-footer:hover .pro-sp {
+    width: 150px;
+}
+section .Product-Item .ul-chair {
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    grid-gap: 40px;
+}
+.chair-footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 35px;
+    text-align: left;
+}
